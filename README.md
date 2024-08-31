@@ -25,5 +25,3 @@ You are required to build a restaurant chatbot that will assist customers in pla
 # How to Submit
 1. Create a new repository for your project on GitHub, along with instructions on how to run the application.
 2. Ensure your code is well documented.
-
-<!-- i am building a restaurant chat bot using node js, epxress, socket.io, ejs. I want after i click on "i want to order" option, it should take me to another page listing the food items available -->
