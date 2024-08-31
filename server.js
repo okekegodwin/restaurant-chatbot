@@ -14,13 +14,24 @@ const PORT = process.env.PORT;
 app.set("views", "views");
 app.set("view engine", "ejs");
 
+app.use(express.static("public"));
+
 app.get("/", (req, res) => {
   res.status(200);
   res.render("index");
 })
 
+app.get("/menu", (req, res) => {
+  res.status(200);
+  res.render("menu")
+})
+
 io.on("connection", (socket) => {
   console.log("a user connected", socket.id);
+
+  socket.on("place-order", () => {
+    socket.emit("redirect", "/menu");
+  })
 
   socket.on("disconnect", () => {
     console.log("user disconnected")

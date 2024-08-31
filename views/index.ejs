@@ -19,30 +19,6 @@
   </form>
   
   <script src="/socket.io/socket.io.js"></script>
-  <script>
-    // i am building a restaurant chat bot using node js, epxress, socket.io, ejs. I want after i click on "i want to order" option, it should take me to another page listing the food items available
-    const socket = io();
-
-    const form = document.getElementById("form");
-    const input = document.getElementById("input");
-
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-
-      if (input.value === "1") {
-        console.log("place an order");
-      } else if (input.value === "99") {
-        console.log("checkout order");
-      } else if (input.value === "98") {
-        console.log("see order history");
-      } else if (input.value === "97") {
-        console.log("see current order");
-      } else if (input.value === "0") {
-        console.log("cancel order");
-      } else {
-        console.log("Not in the option. Please select one of the options!");
-      }
-    })
-  </script>
+  <script src="http://localhost:5000/js/app.js"></script>
 </body>
 </html>

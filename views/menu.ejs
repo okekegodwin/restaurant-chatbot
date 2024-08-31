@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="http://localhost:5000/css/menu.css">
+</head>
+<body>
+  <h1>FOOD MENU</h1>
+  <div>
+    <div class="main-course">
+      <h2>Main Course</h2>
+      <ul>
+        <li><span>a.</span> <p class="food jollof">Jollof Rice &amp; chicken </p> <span>&dollar;50</span></li>
+        <li><span>b.</span> <p class="food">Fried Rice &amp; chicken</p> <span>&dollar;55</span></li>
+        <li><span>c.</span> <p class="food">Spaghetti &amp; Turkey</p> <span>&dollar;90</span></li>
+        <li><span>d.</span> <p class="food">Semo &amp; Egusi</p> <span>&dollar;70</span></li>
+        <li><span>e.</span> <p class="food">Amala &amp; Ewedu</p> <span>&dollar;60</span></li>
+        <li><span>f.</span> <p class="food"> Yam&amp; Egg</p> <span>&dollar;30</span></li>
+      </ul>
+    </div>
+
+    <!-- <div class="potein">
+      <h2>Protein</h2>
+      <ul>
+        <li>Goat meat <span>&dollar;10</span></li>
+        <li>Dog meat <span>&dollar;7</span></li>
+        <li>Chicken <span>&dollar;9</span></li>
+        <li>Turkey <span>&dollar;7.5</span></li>
+        <li>Beef <span>&dollar;5</span></li>
+      </ul>
+    </div> -->
+  </div>
+
+  <div class="message" id="message"></div>
+
+  <form id="form" action="" method="post">
+    <input type="text" id="input" required> <button type="submit">Send</button>
+  </form>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="http://localhost:5000/js/menu.js"></script>
+</body>
+</html>
